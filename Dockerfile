@@ -42,7 +42,7 @@ RUN set -x \
 
 # tadpole resource
 # RUN curl -o ROOT.war http://192.168.0.101:8080/api/ROOT.war
-RUN wget 'https://sourceforge.net/projects/tadpoledbhub/files/2.0.x/2.0.0/ROOT.war/download'
+RUN wget 'https://github.com/hangum/TadpoleForDBTools/releases/download/v2.1.0/ROOT.war'
 # RUN ls -l
 RUN mv $CATALINA_HOME/download $CATALINA_HOME/webapps/ROOT.war
 
