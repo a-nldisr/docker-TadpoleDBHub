@@ -44,7 +44,7 @@ RUN set -x \
 # RUN curl -o ROOT.war http://192.168.0.101:8080/api/ROOT.war
 RUN wget 'https://github.com/hangum/TadpoleForDBTools/releases/download/v2.1.0/ROOT.war'
 # RUN ls -l
-RUN mv $CATALINA_HOME/download $CATALINA_HOME/webapps/ROOT.war
+RUN mv $CATALINA_HOME/ROOT.war $CATALINA_HOME/webapps/ROOT.war
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
